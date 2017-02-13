@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TDD-6 workshop</title>
+
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+        <script src="angular/angular.min.js"></script>
+        <script src="angular/angular-resource.min.js"></script>
+        <script src="script/tdd-6.js"></script>
+        <script src="bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1>Welcome to TDD-6 workshop</h1>
+            <p>This is result of your GET method:</p>
+
+            <div ng-app="TDD-6">
+                <div ng-controller="TDD6Controller" ng-bind="result.count">
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
