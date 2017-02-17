@@ -22,7 +22,7 @@ public class Tdd6ControllerTest {
 
     @Test
     public void getCount() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
+        mvc.perform(MockMvcRequestBuilders.get("/?startDate=2017-01-01&endDate=2018-01-01").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
 

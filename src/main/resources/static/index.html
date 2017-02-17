@@ -6,20 +6,28 @@
         <title>TDD-6 workshop</title>
 
         <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style/daterangepicker.css" />
 
         <script src="angular/angular.min.js"></script>
         <script src="angular/angular-resource.min.js"></script>
         <script src="script/tdd-6.js"></script>
         <script src="bootstrap-3.3.7-dist/js/jquery.min.js"></script>
         <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="script/moment.min.js"></script>
+        <script type="text/javascript" src="script/daterangepicker.js"></script>
     </head>
     <body>
         <div class="container-fluid">
             <h1>Welcome to TDD-6 workshop</h1>
-            <p>This is result of your GET method:</p>
-
+            <p>Your task is to integrate third-party API to BE part of this application.</p>
+            <p>Admit, that FE is production ready and you have no need to change it.</p>
             <div ng-app="TDD-6">
-                <div ng-controller="TDD6Controller" ng-bind="result.count">
+                <div ng-controller="TDD6Controller" data-ng-init="init()">
+                    <input id="daterange"/>
+                    <button ng-click="click()">Call API</button>
+                    <p>This is result of your GET method:</p>
+                    <span id="result" ng-bind="result.count">-1</span>
                 </div>
             </div>
 
