@@ -16,4 +16,4 @@ cd *${REPO_HOME}*
 java -jar target/tdd-6-0.0.1-SNAPSHOT.jar
 
 ## Browse 
-Open ${REPO_HOME}/src/main/resources/static/index.html using ant browser
+Open ${REPO_HOME}/src/main/resources/static/index.html using any browser
